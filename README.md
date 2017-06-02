@@ -1,4 +1,5 @@
 # Laravel Package Auto Discovery
+This package supports Package Auto Discovery feature on Laravel older version (less than 5.5)
 
 ### Requirements
     Laravel >=5.1
