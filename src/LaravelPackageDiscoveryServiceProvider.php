@@ -5,7 +5,7 @@ namespace Appzcoder\LaravelPackageDiscovery;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Foundation\AliasLoader;
 
-class ServiceProvider extends ServiceProvider
+class LaravelPackageDiscoveryServiceProvider extends ServiceProvider
 {
     /**
      * Indicates if loading of the provider is deferred.
@@ -37,10 +37,10 @@ class ServiceProvider extends ServiceProvider
 
         $packages = [];
 
-        $packagesFile = base_path() . 'bootstrap/cache/packages.php';
+        $packagesFile = base_path() . '/bootstrap/cache/packages.php';
 
         if (file_exists($packagesFile)) {
-            $packages = include . $packagesFile;
+            $packages = include $packagesFile;
         }
 
         foreach ($packages as $package) {

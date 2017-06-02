@@ -9,7 +9,7 @@ Open your terminal(CLI), go to the root directory of your Laravel project, then 
 
 1. Run
     ```
-    composer require appzcoder/laravel-package-discovery
+    composer require appzcoder/laravel-package-discovery:dev-master
     ```
 
 2. Add service provider to **config/app.php**.
@@ -17,7 +17,7 @@ Open your terminal(CLI), go to the root directory of your Laravel project, then 
     'providers' => [
         ...
 
-        Appzcoder\LaravelPackageDiscovery\ServiceProvider::class,
+        Appzcoder\LaravelPackageDiscovery\LaravelPackageDiscoveryServiceProvider::class,
     ],
     ```
 
