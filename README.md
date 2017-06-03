@@ -37,18 +37,18 @@ Open your terminal(CLI), go to the root directory of your Laravel project, then 
 
 ## Usage
 Make sure your package's **composer.json** file as below
-    ```json
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Barryvdh\\Debugbar\\ServiceProvider"
-            ],
-            "aliases": {
-                "Debugbar": "Barryvdh\\Debugbar\\Facade"
-            }
+```json
+"extra": {
+    "laravel": {
+        "providers": [
+            "Barryvdh\\Debugbar\\ServiceProvider"
+        ],
+        "aliases": {
+            "Debugbar": "Barryvdh\\Debugbar\\Facade"
         }
     }
-    ```
+}
+```
 
 ## Author
 
