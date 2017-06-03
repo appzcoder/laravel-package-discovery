@@ -35,6 +35,20 @@ Open your terminal(CLI), go to the root directory of your Laravel project, then 
 
 4. Run ```composer dump-autoload```
 
+## Usage
+Make sure your package's **composer.json** file as below
+    ```json
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Barryvdh\\Debugbar\\ServiceProvider"
+            ],
+            "aliases": {
+                "Debugbar": "Barryvdh\\Debugbar\\Facade"
+            }
+        }
+    }
+    ```
 
 ## Author
 
